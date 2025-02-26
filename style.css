@@ -75,7 +75,14 @@ h1 {
 .static-weather p, .air-quality p {
     font-size: 18px;
     margin: 10px 0;
-    margin-bottom: 1rem;
+}
+
+/* Button container with evenly spaced buttons */
+.button-container {
+    display: flex;
+    justify-content: space-evenly; /* Distribute buttons evenly */
+    margin-top: 20px;
+    width: 100%; /* Ensure the container takes full width */
 }
 
 button {
@@ -85,7 +92,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 20px;
+    font-size: 16px;
 }
 
 button:hover {
@@ -112,6 +119,12 @@ footer p + p {
     margin-top: 10px;
 }
 
+.anchor{
+    text-decoration: none;
+    color: white;
+
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
@@ -133,5 +146,10 @@ footer p + p {
 
     footer p {
         font-size: 14px;
+    }
+
+    .button-container {
+        flex-direction: column; /* Stack the buttons on top of each other */
+        gap: 10px;
     }
 }
