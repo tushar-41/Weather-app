@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather and Air Quality App</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"> <!-- FontAwesome for logo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="navbar-container">
+            <div class="logo">
+                <i class="fas fa-sun"></i> WeatherApp
+            </div>
+            <button class="signin-btn">Sign In</button>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <div class="container">
+        <h1>Air Quality in Delhi</h1>
+        
+        <div class="static-weather">
+            <h2>Weather Information</h2>
+            <p>Temperature: 30°C</p>
+            <p>Description: Sunny</p>
+            <p>Humidity: 60%</p>
+            <p>Wind Speed: 10 m/s</p>
+        </div>
+
+        <div class="air-quality">
+            <h3>Air Quality</h3>
+            <p id="aqi">Air Quality Index (AQI): </p>
+            <p id="air-description">Air Quality Description: Moderate</p>
+        </div>
+
+        <button id="reload-btn">Reload</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 <span>JAZEEB KHAN</span>. </p>
+        <p>Made by JAZEEB KHAN</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
